@@ -13,14 +13,21 @@ var est = "Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti";
 	<h1>Arrays 2</h1>
 </header>
 <script type="text/javascript">     
-var num = sem.split(',');
-var n1= num.length;  
-for (var i=0; i <= n1 ; i++ )
-{
-var newArray = [[sem.split(',')] , [est.split('.')]];
+var newArray = sem.split(',');
 newArray;
-document.writeln(newArray[[i],[i]]);
-}
+var newArray2 = est.split('.');
+newArray2;
+var num = newArray.length;
+var niu = [];
+for (var i=0; i < num ; i++ )
+        {
+           niu.push(newArray[i]);
+           niu.push(newArray2[i]);  
+          niu;
+        }
+document.writeln(niu);
+console.log(niu);
+
 /*
 var estarray = est.split('.');
 estarray;
