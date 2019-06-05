@@ -4,8 +4,6 @@
 <script type="application/javascript">
 var sem = "Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo";
 var est = "Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti";
-var list;
-var n = est.replace('.',',');
 </script>
 <title>VCS prueba de bootcamp</title>
 <meta charset="utf-8"/>
@@ -14,15 +12,26 @@ var n = est.replace('.',',');
 <header>
 	<h1>Arrays 2</h1>
 </header>
-<script type="text/javascript">          
-	if (sem.length == est.length){
-        var num = sem.length;
-        for (var i=0, i >=num , i++ )
+<script type="text/javascript">     
+var num = sem.split(',');
+var n1= num.length;  
+for (var i=0; i <= n1 ; i++ )
+{
+var newArray = [[sem.split(',')] , [est.split('.')]];
+newArray;
+document.writeln(newArray[[i],[i]]);
+}
+/*
+var estarray = est.split('.');
+estarray;
+var num = semarray.length;
+        for (var i=0; i <= num ; i++ )
         {
-            
+            niu.push(semarray[i]);
+            niu;
         }
-
-    }
-    </script>	
+alert(niu);
+*/
+ </script>	
 </body>
 </html>
